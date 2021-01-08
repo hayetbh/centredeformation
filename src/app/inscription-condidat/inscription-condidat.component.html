@@ -1,47 +1,30 @@
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center">
+ <!-- ======= Header ======= -->
+<header id="header" class="fixed-top d-flex align-items-center">
+  <div class="container d-flex align-items-center">
 
-      <div class="logo mr-auto">
-        <h1 class="text-light"><a href="index.html"><span>Vesperr</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
-
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#index.html">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li class="drop-down"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="drop-down"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-
-          <li class="get-started"><a href="#about">Get Started</a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-
+    <div class="logo mr-auto">
+      <h1 class="text-light"><a href="index.html"><span>training Center</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html"><img src="assets/assets/img/logo.png" alt="" class="img-fluid"></a>-->
     </div>
-  </header><!-- End Header -->
+
+    <nav class="nav-menu d-none d-lg-block">
+      <ul>
+        <li class="active"><a href="#index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Formations</a></li>
+        <li><a href="#team">Team</a></li>
+        
+        <li><a href="#contact">Contact</a></li>
+
+        <li class="get-started"><a href="#about">Login</a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </div>
+</header><!-- End Header -->
+
 
   <main id="main">
 
@@ -50,21 +33,58 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Inner Page</h2>
+          <h2>Sign in Page</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Inner Page</li>
+            <li>Sign in </li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs Section -->
 
-    <section class="inner-page">
+    <section class="contact">
       <div class="container">
-        <p>
-          Example inner page template
-        </p>
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="form-group">
+            <h5>Name</h5>
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter your name" />
+            <div class="validate"></div>
+          </div>
+          <div class="form-group">
+            <h5>Last Name</h5>
+            <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Your LastName" data-rule="minlen:4" data-msg="Please enter your last name" />
+            <div class="validate"></div>
+          </div>
+          <div class="form-group">
+            <h5>Email</h5>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+            <div class="validate"></div>
+          </div>
+          <div class="form-group">
+            <h5>ID Number</h5>
+            <input type="text" name="cin" class="form-control" id="cin" placeholder="Your ID number" data-rule="minlen:4" data-msg="Your identity number must be 8 numbers" />
+            <div class="validate"></div>
+          </div>
+          <div class="form-group">
+            <h5>Profil Picture</h5>
+            <input type="file" name="photo" class="form-control" id="photo" placeholder="Your Profil Picture" data-rule="minlen:4" data-msg="Please enter your profil picture" />
+            <div class="validate"></div>
+          </div>
+          <div class="form-group">
+            <h5>CV</h5>
+            <input type="file" name="cv" class="form-control" id="cv" placeholder="Your CV" data-rule="minlen:4" data-msg="Please enter your cv on type PDF " />
+            <div class="validate"></div>
+          </div>
+          <div class="form-group">
+            <h5>Password</h5>
+            <input type="password" class="form-control" name="password" id="password" placeholder="Password" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+            <div class="validate"></div>
+          </div>
+          
+       
+          <div class="text-center"><button type="submit">Sign in</button></div>
+        </form>
       </div>
     </section>
 
@@ -76,15 +96,9 @@
       <div class="row d-flex align-items-center">
         <div class="col-lg-6 text-lg-left text-center">
           <div class="copyright">
-            &copy; Copyright <strong>Vesperr</strong>. All Rights Reserved
+            &copy; Copyright <strong>training center </strong>. All Rights Reserved
           </div>
-          <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
+         
         </div>
         <div class="col-lg-6">
           <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
@@ -98,4 +112,4 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>  

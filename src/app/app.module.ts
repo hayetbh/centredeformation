@@ -13,6 +13,7 @@ import { DetailFormationComponent } from './detail-formation/detail-formation.co
 import { InscriptionCondidatComponent } from './inscription-condidat/inscription-condidat.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './login/login.component';
+import { FormationsComponent } from './formations/formations.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { LoginComponent } from './login/login.component';
     RechercherFormationComponent,
     DetailFormationComponent,
     InscriptionCondidatComponent,
-    LoginComponent
+    LoginComponent,
+    FormationsComponent
   ],
   imports: [
     BrowserModule,
